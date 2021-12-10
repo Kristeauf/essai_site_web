@@ -1,10 +1,11 @@
 #blocpage{
 width: auto;
+box-sizing: border-box;
 }
 body{
     margin: 0 auto;
     font-family: 'Roboto', sans-serif; 
-    
+   
 }   
 h2{
     font-family: 'Shrikhand', cursive;
@@ -334,9 +335,44 @@ i.fas.fa-mobile-alt{
     background-color: white;
     border-radius: 25px;
     margin-bottom: 30px; 
-    
+    padding-bottom: 0;
+    position: relative;
 }
 .accueil_resto a{
     text-decoration: none;
     color: black;
+
 }
+.info_resto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+}
+   
+.coeurpage{
+   
+    position: absolute;
+   padding-right: 20px;   
+   align-self: flex-end;
+}
+.nouveau_flag{
+   display: block-inline;
+   width:70px;
+   height: auto;
+   position: absolute;
+   bottom: 85%;
+   left:72%;
+   text-align: center;
+   font-size: 14px;
+
+    padding: 5px;
+    background-color: 
+    #99e2d0;
+    border-radius: 2px;
+    color: rgb(35, 128, 100);
+    
+    
+}
+
