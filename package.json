@@ -1,16 +1,26 @@
 {
   "name": "callerinchristophe_3_08122021",
   "version": "1.0.0",
-  "description": "projet 3 openclassroom",
+  "description": "projet3",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "dependencies": {
+    "postcss": "^8.4.4",
+    "sass": "^1.44.0",
+    "autoprefixer": "^10.4.0"
   },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prefix": "postcss .style.css --use autoprefixer -d ."
+  },
+
+    
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Kristeauf/CallerinChristophe_3_08122021.git"
   },
-  "author": "kris",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Kristeauf/CallerinChristophe_3_08122021/issues"

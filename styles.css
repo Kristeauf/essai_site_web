@@ -1,187 +1,14 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.3.6,
-* Autoprefixer: v10.3.1
-* Browsers: last 4 version
-*/
-.logo-loader img{
-  background-color:#ff79da;
 
-  width: 180px;
-  height: 180px;
-  object-fit: contain;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  padding: 15px;
-  margin-top: 100px;
-  box-shadow: inset -3px 7px 30px 0px #9356dc;
- 
-
-}
-.container-loader{
- position: fixed;
- width: 100%;
- height: 100%;
- background-color: white;
-opacity: 1;
- 
- 
- animation-name: loader;
- animation-duration: 5s;
- animation-fill-mode: forwards;
- animation-iteration-count: 1 ;
- 
-}
-
-@keyframes loader {
-  0%{
-    background-color: white;
-    opacity: 1;
-    z-index: 1;
-  }
-  50%{
-    opacity: 1;
-    background-color: white;
-    z-index: 1;
-  }
-  80%{
-    opacity: 1;
-    background-color: white;
-    z-index: 1;
-  }
-  100%{
-   
-    transition: 0.8s;
-    -webkit-transition: 0.8s;
-    -moz-transition: 0.8s;
-    -ms-transition: 0.8s;
-    -o-transition: 0.8s;
-     opacity: 0;
-}
-}
-
-  
-
-
-
-  
-
-
- .logo-loader{
- 
- 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
- 
-
- 
-}
-  
-  .ball{
-    width: 10px;
-    height: 10px;
-    background-color:#ff79da;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    box-shadow: inset -6px -8px 7px 1px #9356dc;
-    padding: 10px;
-    margin: 10px;
-    margin-top: 50px;
-    animation-name:rebond;
-    animation-fill-mode: backwards;
-
-    animation-iteration-count: 5;
-   animation-duration: 2s;
-  
-    
-    
-    animation-timing-function: ease-in;
-  opacity: 0;
-    animation-fill-mode:backwards;
-    transform: translatey(0);
-    -webkit-transform: translatey(0);
-    -moz-transform: translatey(0);
-    -ms-transform: translatey(0);
-    -o-transform: translatey(0);
-    animation-delay: 0s;
-}
-   .contain-ball{
-    
-    display: flex;
-    justify-content: center;
-}
-  .container-logo{ 
-    
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-@keyframes rebond {
-  0%{
-    opacity: 1;
-    transform:translateY(0px)   ;
-    -webkit-transform:translateY(0px)   ;
-    -moz-transform:translateY(0px)   ;
-    -ms-transform:translateY(0px)   ;
-    -o-transform:translateY(0px)   ;
-}
-  
-
-  
-      
-
-    50%{
-      opacity: 1;
-      transform:translatey(-10px)  scale(1.2);
-      -webkit-transform:translatey(-10px)  scale(1.2);
-      -moz-transform:translatey(-10px)  scale(1.2);
-      -ms-transform:translatey(-10px)  scale(1.2);
-      -o-transform:translatey(-10px)  scale(1.2);
-}
- 
-
-    100%{
-     opacity: 1;
-      transform: translatey(0px);
-      -webkit-transform: translatey(0px);
-      -moz-transform: translatey(0px);
-      -ms-transform: translatey(0px);
-      -o-transform: translatey(0px);
-}
-      
-}
-
-
-  
-.contain-ball :nth-child(2){
-  animation-delay: 1s;
-  
-  
- 
-}
   
 
 body {
   margin: 0 auto;
   font-family: 'Roboto', sans-serif;
   background-color: #f5f3f3;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-          /*loader*/
+  box-sizing: border-box;
   
 
-
+}
 
 h2 {
   font-family: 'Shrikhand', cursive;
@@ -269,24 +96,6 @@ div.carte_menu__container {
  box-shadow: #eee9e9 0px -1px 8px 4px;
 
  /* animation apparition du menu*/
-}
-@-webkit-keyframes apparition {
-  from{
-    opacity: 0;
-    transform: translatey(40px);
-    -webkit-transform: translatey(40px);
-    -moz-transform: translatey(40px);
-    -ms-transform: translatey(40px);
-    -o-transform: translatey(40px);
-}
- to{
-    opacity: 1;
-    transform: translatey(0px);
-    -webkit-transform: translatey(0px);
-    -moz-transform: translatey(0px);
-    -ms-transform: translatey(0px);
-    -o-transform: translatey(0px);
-}
 }
 @keyframes apparition {
   from{
@@ -398,15 +207,10 @@ i.fas.fa-handshake {
   margin-right: auto;
   margin-bottom: 15px;
  
-          -webkit-animation-name: apparition;
- 
-                  animation-name: apparition;
-          -webkit-animation-duration: 3s;
-                  animation-duration: 3s;
-          -webkit-animation-timing-function: ease-in-out;
-                  animation-timing-function: ease-in-out;
-          -webkit-animation-fill-mode: forwards;
-                  animation-fill-mode: forwards;
+          animation-name: apparition;
+          animation-duration: 3s;
+          animation-timing-function: ease-in-out;
+          animation-fill-mode: forwards;
           transform: translateY(0px);
          
           -webkit-transform: translateY(0px);
@@ -417,16 +221,9 @@ i.fas.fa-handshake {
 
 .detail{
   width: 75%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 10px;
   padding-top: 5px;
   white-space: nowrap;
@@ -435,8 +232,7 @@ i.fas.fa-handshake {
   .infos{
     font-size: 15px;
     white-space: nowrap;
-    -o-text-overflow: ellipsis;
-       text-overflow: ellipsis;
+    text-overflow: ellipsis;
     overflow: hidden;
   }
  
@@ -447,35 +243,21 @@ i.fas.fa-handshake {
 
 .carte_menu--detail{
   width: 95%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
  
-  -webkit-box-align: end;
- 
-      -ms-flex-align: end;
- 
-          align-items: flex-end;
+  align-items: flex-end;
   padding: 0px;
   
 }
 .check{
   width: 0%;
   height:65px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   background-color: #99e2d0;
   margin: 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   opacity: 0;
   
   
@@ -484,34 +266,17 @@ i.fas.fa-handshake {
   margin-bottom: 5px;
   overflow: hidden;
   white-space: nowrap;
-  -o-text-overflow: ellipsis;
-     text-overflow: ellipsis;
+  text-overflow: ellipsis;
 
 }
 .prix{
 width: 10%;
-font-weight: bolder; -o-text-overflow:ellipsis; text-overflow:ellipsis;
+font-weight: bolder; text-overflow:ellipsis;
 text-align: end;
 padding-right: 20px;
 
 padding-bottom: 10px;
 }
-
-
-
-
-
-
- @-webkit-keyframes check{
-   from{
-     opacity:0;
-     width:0%;
-   }
-   to{
-     opacity:1;
-     width:20%;
-   }
- }
 
 
 
@@ -530,12 +295,8 @@ padding-bottom: 10px;
  }
 i.fas.fa-check{
  font-weight: bolder;
- display: -webkit-box;
- display: -ms-flexbox;
  display: flex;
- -webkit-box-align: end;
-     -ms-flex-align: end;
-         align-items: flex-end;
+ align-items: flex-end;
  color: #99e2d0;
  background-color: white;
  border-radius: 50%;
@@ -552,48 +313,22 @@ i.fas.fa-check{
  -o-transform: rotate(0);
 }
 .carte_menu--detail:hover .check{
-  -webkit-animation-name: check;
-          animation-name: check;
-  -webkit-animation-duration: 0.4s;
-          animation-duration: 0.4s;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-name: check;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px; 
 }
 .carte_menu--detail:hover i.fas.fa-check {
-  -webkit-animation-name: rotateico;
-          animation-name: rotateico;
- -webkit-animation-duration: 0.4s;
-         animation-duration: 0.4s;
- -webkit-animation-timing-function: linear;
-         animation-timing-function: linear;
- -webkit-animation-fill-mode:forwards;
-         animation-fill-mode:forwards;
+  animation-name: rotateico;
+ animation-duration: 0.4s;
+ animation-timing-function: linear;
+ animation-fill-mode:forwards;
 
- -webkit-animation-iteration-count:1;
-
-         animation-iteration-count:1;
+ animation-iteration-count:1;
  
 
-}
- @-webkit-keyframes rotateico {
-   0%{
-     opacity:1;
-    
-     transform: rotate(1turn);
-     -webkit-transform: rotate(1turn);
-     -moz-transform: rotate(1turn);
-     -ms-transform: rotate(1turn);
-     -o-transform: rotate(1turn);
-   }
-  
-   
-   100%{
-     opacity: 1;
-   }
 }
  @keyframes rotateico {
    0%{
@@ -642,8 +377,8 @@ h3 {
   margin-top: 60px;
   padding: 15px 20px;
   border-radius: 25px;
+  
   background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#a76af1));
-  background: -o-linear-gradient(#ff79da, #a76af1);
   background: linear-gradient(#ff79da, #a76af1);
   color: whitesmoke;
   -webkit-box-shadow: 3px 3px 5px 2px #c4bebf;
@@ -652,11 +387,8 @@ h3 {
 
 .command:hover {
         transition: all 2s ;
-        -webkit-transition-delay: 3s;
-             -o-transition-delay: 3s;
-                transition-delay: 3s;
+        transition-delay: 3s;
         background: -webkit-gradient(linear, left top, left bottom, from(#ff87dd), to(#b683f5));
-        background: -o-linear-gradient(#ff87dd, #b683f5);
         background: linear-gradient(#ff87dd, #b683f5);
         -webkit-box-shadow: 3px 3px 7px 4px #c4bebf;
         box-shadow: 3px 3px 10px 6px #c4bebf;
@@ -816,7 +548,6 @@ i.fas.fa-mobile-alt {
   margin-bottom: 30px;
   padding-bottom: 0;
   position: relative;
-  
 }
 
 .accueil_resto a {
@@ -877,31 +608,6 @@ i.fas.fa-mobile-alt {
   -o-transition: color 0.3s;
 }
 
-  @-webkit-keyframes coeurempli {
-    
-  
-  0% {
-   color: rgba(187, 86, 220, 0.2);
-   font-weight: lighter;
-   
-  }
-  50% {
-    color: rgba(187, 86, 220, 0.5);
-    
-  }
-  99% {
-    color: rgba(187, 86, 220, 0.7);
-    
-  }
-  100% {
-    color: #bb56dc;
-    font-weight: bolder;
-    
-
-    
-  }
-}
-
   @keyframes coeurempli {
     
   
@@ -926,3 +632,6 @@ i.fas.fa-mobile-alt {
     
   }
 }
+
+
+/*# sourceMappingURL=style.css.map */
